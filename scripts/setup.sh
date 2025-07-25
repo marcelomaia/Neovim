@@ -1,1 +1,3 @@
-- check if nvm / node is installed, then ask the user the node path
+# copy the content of this project to ~/.config/nvim/
+
+cp -r * ~/.config/nvim/
