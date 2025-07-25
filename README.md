@@ -2,6 +2,33 @@
 
 This Neovim setup uses [LazyVim](https://github.com/LazyVim/LazyVim) and a curated set of plugins for productivity, code navigation, Git integration, and more.
 
+## Installation
+
+Just run the `scripts/install.sh`
+
+## First steps
+
+- Check health: `:checkhealth lazy`
+- Check Mason health: `:checkhealth mason`
+- Run Mason and install your desired language server
+
+```
+  Mason Keyboard shortcuts:
+    Toggle help g?
+    Toggle package info <CR>
+    Toggle package Installation log <CR>
+    Apply language filter <C-f>
+    Install package i
+    Uninstall package X
+    Update package u
+    Update all outdated packages U
+    Check for new package version c
+    Check for new versions (all packages) C
+    Cancel installation of package <C-c>
+    Close window q
+    Close window <Esc>
+```
+
 ## Useful Git Shortcuts
 
 - `<leader>gp` — Preview Git hunk ([lua/plugins/gitsigns.lua](lua/plugins/gitsigns.lua))
@@ -17,14 +44,13 @@ This Neovim setup uses [LazyVim](https://github.com/LazyVim/LazyVim) and a curat
 - `[d` — Previous diagnostic (LazyVim default)
 - `]d` — Next diagnostic (LazyVim default)
 - `[e` — Previous error (LazyVim default)
-- `]e` — Next error (LazyVim default) 
+- `]e` — Next error (LazyVim default)
 - `<leader>ff` — Find file
 - `<leader>sg` — Find file by content
 
 ## Explorer Shortcuts
 
 - `<leader>e` — Toggle file explorer
-
 
 ## LSP and Code Navigation
 

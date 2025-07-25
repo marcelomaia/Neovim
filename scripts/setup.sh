@@ -1,0 +1,1 @@
+- check if nvm / node is installed, then ask the user the node path
