@@ -5,4 +5,4 @@
 local opt = vim.opt
 
 -- Do not overwrite the system clipboard
-opt.clipboard = "unnamed"
+opt.clipboard = ""

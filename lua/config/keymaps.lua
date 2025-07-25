@@ -21,20 +21,3 @@ end, { desc = "Copy full file path" })
 
 -- Copy to system clipboard
 map({ "n", "v" }, "<leader>Y", '"+y', { desc = "Copy text to system clipboard" })
-
--- Copilot.vim
-vim.keymap.set("i", "<Tab>", function()
-  return vim.fn["copilot#Accept"]("<Tab>")
-end, { expr = true, silent = true, noremap = true })
-
-vim.keymap.set("i", "<C-J>", function()
-  return vim.fn["copilot#Next"]()
-end, { expr = true, silent = true })
-
-vim.keymap.set("i", "<C-K>", function()
-  return vim.fn["copilot#Previous"]()
-end, { expr = true, silent = true })
-
-vim.keymap.set("i", "<C-X>", function()
-  return vim.fn["copilot#Dismiss"]()
-end, { expr = true, silent = true })
