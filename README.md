@@ -1,6 +1,26 @@
 # Neovim Configuration
 
-A modern Neovim setup powered by [LazyVim](https://github.com/LazyVim/LazyVim) and a curated set of plugins for productivity, code navigation, Git integration, and more.
+A modern, productive Neovim setup powered by [LazyVim](https://github.com/LazyVim/LazyVim) and a curated set of plugins for code navigation, Git integration, and more.
+
+---
+
+## ✨ Features
+
+- Fast startup and plugin management with LazyVim
+- Powerful LSP integration and code navigation
+- Git integration with handy shortcuts
+- Fuzzy search and file explorer
+- Easy commenting and table formatting
+- Customizable keymaps for productivity
+
+---
+
+## ⚡ Requirements
+
+- [Neovim](https://neovim.io/) >= 0.9
+- [git](https://git-scm.com/)
+- [ripgrep](https://github.com/BurntSushi/ripgrep) (for searching)
+- [node.js](https://nodejs.org/) (for some language servers)
 
 ---
 
@@ -8,24 +28,15 @@ A modern Neovim setup powered by [LazyVim](https://github.com/LazyVim/LazyVim) a
 
 ```sh
 scripts/setup.sh
+```
 
-  ```
+---
 
-  | start| eat | left |
-  | 12 | 5   | 7   |
-  | 20   | 5 | 15  |
+## 🛠️ First Steps
 
-  ```
-
-  Becomes:
-
-  ```
-
-  | start | eat | left |
-  | 12    | 5   | 7    |
-  | 20    | 5   | 15   |
-
-  ```
+- `:Lazy` — Manage plugins
+- `:Mason` — Manage LSP servers and tools
+- `:checkhealth` — Diagnose common issues
 
 ---
 
@@ -84,15 +95,37 @@ scripts/setup.sh
 - `gI` — Go to implementation
 - `gr` — Show references
 - `K`  — Show documentation (hover)
-- `<leader>ca`  — Code actions (like quick fix, refactor, etc.)
-- `<leader>cr`  — Rename symbol
-- `<leader>cp`  — Markdown preview
+- `<leader>ca` — Code actions
+- `<leader>cr` — Rename symbol
+- `<leader>cf`  — Format buffer or selection
+- `<leader>x` — Diagnostics/Quick fix
+- `<leader>ss` — Show LSP symbols
 
 ---
 
 ## 💬 Commenting
 
 - `gcc` — Toggle comment (line or selection)
+
+---
+
+## 📊 Table Formatting
+
+Align tables easily using [Tabularize](https://github.com/godlygeek/tabular):
+
+Before:
+```
+| start| eat | left |
+| 12   | 5   | 7    |
+| 20   | 5   | 15   |
+```
+
+After running `:Tabularize /|`:
+```
+| start | eat | left |
+| 12    | 5   | 7    |
+| 20    | 5   | 15   |
+```
 
 ---
 
@@ -112,4 +145,17 @@ scripts/setup.sh
 
 ---
 
-Enjoy your Neovim experience!
+## 🛟 Troubleshooting
+
+- Run `:checkhealth` for diagnostics.
+- Check `:messages` for errors.
+- Ensure all dependencies are installed.
+
+---
+
+## 🙏 Credits
+
+- [LazyVim](https://github.com/LazyVim/LazyVim)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+- And all plugin authors!
