@@ -6,6 +6,6 @@ return {
     "sindrets/diffview.nvim", -- optional, for better diff UI
   },
   config = function()
-    require("neogit").setup()
+    require("neogit").setup({})
   end,
 }
