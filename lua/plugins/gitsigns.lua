@@ -4,8 +4,8 @@ return {
     opts = {
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
-        vim.keymap.set("n", "]h", gs.next_hunk, { buffer = bufnr, desc = "Next Git Hunk" })
-        vim.keymap.set("n", "[h", gs.prev_hunk, { buffer = bufnr, desc = "Previous Git Hunk" })
+        vim.keymap.set("n", "]g", gs.next_hunk, { buffer = bufnr, desc = "Next Git Hunk" })
+        vim.keymap.set("n", "[g", gs.prev_hunk, { buffer = bufnr, desc = "Previous Git Hunk" })
 
         vim.keymap.set("n", "<leader>gp", gs.preview_hunk, { buffer = bufnr, desc = "Preview Git Hunk" })
         vim.keymap.set("n", "<leader>gr", function()

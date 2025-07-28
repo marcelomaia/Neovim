@@ -52,7 +52,7 @@ scripts/setup.sh
 
 ## 🧭 Navigation Shortcuts
 
-- `[h` / `]h` — Previous/Next Git hunk
+- `[g` / `]g` — Previous/Next Git hunk
 - `[w` / `]w` — Previous/Next warning
 - `[e` / `]e` — Previous/Next error
 - `[d` / `]d` — Previous/Next diagnostic
